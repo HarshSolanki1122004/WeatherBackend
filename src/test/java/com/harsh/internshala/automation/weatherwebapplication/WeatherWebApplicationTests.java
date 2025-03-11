@@ -1,0 +1,13 @@
+package com.harsh.internshala.automation.weatherwebapplication;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class WeatherWebApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
