@@ -42,7 +42,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/v1/users/login", "/api/v1/users/register" ,"/api/v1/users/verify").permitAll() // Allow public access
                         .anyRequest().authenticated() // Secure all other endpoints
                 )
-                // .httpBasic(Customizer.withDefaults())
+                .httpBasic(Customizer.withDefaults())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
         return httpSecurity.build();
